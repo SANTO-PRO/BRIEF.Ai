@@ -72,11 +72,11 @@
 }
 
 .black_btn {
-	@apply rounded-full border border-black bg-black py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+	@apply rounded-full border border-black bg-black p-1 text-2xl text-white transition-all hover:bg-white hover:text-black;
 }
 
 .head_text {
-	@apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl text-center;
+	@apply mt-5 text-5xl font-bold leading-[1.20] text-black sm:text-6xl text-center;
 }
 
 .orange_gradient {
@@ -84,7 +84,7 @@
 }
 
 .desc {
-	@apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-2xl;
+	@apply mt-5 text-lg text-gray-600 sm:text-xl text-center max-w-3xl;
 }
 
 .url_input {
