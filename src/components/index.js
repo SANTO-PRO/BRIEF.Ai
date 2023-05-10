@@ -1,4 +1,4 @@
 import Intro from './Intro';
-import Summary from './Summary';
+import Summarizer from './Summarizer';
 
-export { Intro, Summary };
+export { Intro, Summarizer };

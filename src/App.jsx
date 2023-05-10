@@ -1,4 +1,4 @@
-import { Intro, Summary } from './components';
+import { Intro, Summarizer } from './components';
 
 const App = () => {
 	return (
@@ -9,7 +9,7 @@ const App = () => {
 
 			<div className="app">
 				<Intro />
-				<Summary />
+				<Summarizer />
 			</div>
 		</main>
 	);
