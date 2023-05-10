@@ -1,5 +1,18 @@
+import { Intro, Summary } from './components';
+
 const App = () => {
-	return <div>App</div>;
+	return (
+		<main>
+			<div className="main">
+				<div className="gradient" />
+			</div>
+
+			<div className="app">
+				<Intro />
+				<Summary />
+			</div>
+		</main>
+	);
 };
 
 export default App;
