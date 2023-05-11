@@ -2,12 +2,15 @@ import { RxLink1 } from 'react-icons/rx';
 import { TbCornerDownLeft } from 'react-icons/tb';
 // import { loader } from '../assets';
 import { useState } from 'react';
+import { useLazyGetSummaryQuery } from '../store';
 
 const Summarizer = () => {
 	const [article, setArticle] = useState({
 		url: '',
 		summary: '',
 	});
+
+	const [getSummary, { isFetching, error }] = useLazyGetSummaryQuery();
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
