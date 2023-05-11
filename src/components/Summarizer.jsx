@@ -6,6 +6,7 @@ const Summarizer = () => {
 	return (
 		<section className="mt-16 w-full max-w-xl">
 			<div className="flex flex-col w-full gap-2">
+				{/* Search  */}
 				<form
 					className="relative justify-center items-center"
 					onSubmit={() => {}}
@@ -29,6 +30,8 @@ const Summarizer = () => {
 						<TbCornerDownLeft />
 					</button>
 				</form>
+
+				{/* URL History  */}
 			</div>
 		</section>
 	);
