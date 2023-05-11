@@ -4,7 +4,9 @@ const store = configureStore({
 	reducer: {
 		//
 	},
-	middleware: () => {},
+	middleware: (getDefaultMiddleware) => {
+		return getDefaultMiddleware().concat();
+	},
 });
 
 setupListeners(store.dispatch);
