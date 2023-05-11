@@ -11,7 +11,11 @@ const articleApi = createApi({
 		return {
 			fetchArticles: builder.query({
 				query: () => {
-					return;
+					return {
+						url: '',
+						params: {},
+						method: 'GET',
+					};
 				},
 			}),
 		};
