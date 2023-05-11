@@ -13,7 +13,13 @@
 }
 
 .main:before {
-	background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+	background: radial-gradient(
+		at right top,
+		rgb(199, 210, 254),
+		rgb(254, 202, 202),
+		rgb(254, 249, 195)
+	);
+
 	position: absolute;
 	content: '';
 	z-index: 2;
@@ -80,7 +86,7 @@
 }
 
 .orange_gradient {
-	@apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+	@apply bg-gradient-to-r from-fuchsia-500 via-red-600 to-orange-400 bg-clip-text text-transparent;
 }
 
 .desc {
