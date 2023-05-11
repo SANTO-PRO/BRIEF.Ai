@@ -1,10 +1,11 @@
 import { RxLink1 } from 'react-icons/rx';
 import { TbCornerDownLeft } from 'react-icons/tb';
 // import { loader } from '../assets';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLazyGetSummaryQuery } from '../store';
 
 const Summarizer = () => {
+	const [allArticles, setAllArticles] = useState([]);
 	const [article, setArticle] = useState({
 		url: '',
 		summary: '',
@@ -12,12 +13,28 @@ const Summarizer = () => {
 
 	const [getSummary, { isFetching, error }] = useLazyGetSummaryQuery();
 
+	useEffect(() => {
+		const articlesFromLoaclStorage = JSON.parse(
+			localStorage.getItem('articles'),
+		);
+
+		if (articlesFromLoaclStorage) setAllArticles(articlesFromLoaclStorage);
+	}, []);
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
 		const { data } = await getSummary({ articleUrl: article.url });
 
-		console.log(data.summary);
+		if (data?.summary) {
+			const newArticle = { ...article, summary: data.summary };
+			const updatedAllArticles = [newArticle, ...allArticles];
+
+			setArticle(newArticle);
+			setAllArticles(updatedAllArticles);
+
+			localStorage.setItem('articles', JSON.stringify(updatedAllArticles));
+		}
 	};
 
 	return (
