@@ -1,5 +1,5 @@
 import { RxLink1 } from 'react-icons/rx';
-import { TbCornerDownLeft } from 'react-icons/tb';
+import { TbCopy, TbCornerDownLeft } from 'react-icons/tb';
 // import { loader } from '../assets';
 import { useEffect, useState } from 'react';
 import { useLazyGetSummaryQuery } from '../store';
@@ -66,12 +66,32 @@ const Summarizer = () => {
 				</form>
 
 				{/* URL History  */}
+				<div className="flex flex-col gap-1 max-h-60 overflow-t-auto">
+					{allArticles.map((item, index) => (
+						<div
+							key={`link-${index}`}
+							onClick={() => setArticle(item)}
+							className="link_card"
+						>
+							<div className="copy_btn">
+								<TbCopy className="w-[50%] h-[50%] object-contain" />
+							</div>
+							<p className="flex-1 font-satoshi text-blue-700 font-medium text-sm truncate">
+								{item.url}
+							</p>
+						</div>
+					))}
+				</div>
 			</div>
+
+			{/* Summary  */}
+
+			<div className=""></div>
 		</section>
 	);
 };
 
 export default Summarizer;
 
-// TbCopy
+//
 // TbCheck
