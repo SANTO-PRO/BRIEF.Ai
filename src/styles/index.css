@@ -94,7 +94,7 @@
 }
 
 .url_input {
-	@apply block w-full rounded-md border border-gray-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
+	@apply block w-full rounded-md border-4 border-red-200 bg-white py-2.5 pl-10 pr-12 text-sm shadow-lg font-satoshi font-medium focus:border-black focus:outline-none focus:ring-0;
 }
 
 .submit_btn {
@@ -110,7 +110,7 @@
 }
 
 .blue_gradient {
-	@apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+	@apply font-black bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 bg-clip-text text-transparent;
 }
 
 .summary_box {

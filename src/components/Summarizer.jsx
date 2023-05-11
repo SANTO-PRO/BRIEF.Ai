@@ -85,7 +85,7 @@ const Summarizer = () => {
 									{copied === item.url ? <TbCheck /> : <TbCopy />}
 								</div>
 							</div>
-							<p className="flex-1 font-satoshi text-blue-700 font-medium text-sm truncate">
+							<p className="flex-1 font-satoshi blue_gradient font-medium text-sm truncate">
 								{item.url}
 							</p>
 						</div>
@@ -94,7 +94,7 @@ const Summarizer = () => {
 			</div>
 
 			{/* Summary  */}
-			<div className="my-10 max-w-full flex justify-center items-center cursor-pointer">
+			<div className="my-10 max-w-full flex justify-center items-center">
 				{isFetching ? (
 					<img src={loader} alt="loader" className="w-20 h-20 object-contain" />
 				) : error ? (
