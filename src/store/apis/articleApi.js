@@ -35,8 +35,11 @@ const articleApi = createApi({
 			getSummary: builder.query({
 				query: () => {
 					return {
-						url: '',
-						params: {},
+						url: 'summarize',
+						params: {
+							url: 'https://time.com/6266679/musk-ai-open-letter/',
+							length: '3',
+						},
 						method: 'GET',
 					};
 				},
