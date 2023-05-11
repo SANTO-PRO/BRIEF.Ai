@@ -7,6 +7,6 @@ const store = configureStore({
 	middleware: () => {},
 });
 
-setupListeners(store);
+setupListeners(store.dispatch);
 
 export { store };
