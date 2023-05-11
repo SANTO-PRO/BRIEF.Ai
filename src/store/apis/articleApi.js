@@ -14,17 +14,19 @@ const articleApi = createApi({
 				'X-RapidAPI-Host',
 				'article-extractor-and-summarizer.p.rapidapi.com',
 			);
+
+			return headers;
 		},
 	}),
 
 	endpoints: (builder) => {
 		return {
 			getSummary: builder.query({
-				query: () => {
+				query: (articleUrl) => {
 					return {
-						url: 'summarize',
+						url: '/summarize',
 						params: {
-							url: 'https://time.com/6266679/musk-ai-open-letter/',
+							url: encodeURIComponent(articleUrl),
 							length: '3',
 						},
 						method: 'GET',
@@ -35,4 +37,5 @@ const articleApi = createApi({
 	},
 });
 
+export const { useLazyGetSummaryQuery } = articleApi;
 export { articleApi };

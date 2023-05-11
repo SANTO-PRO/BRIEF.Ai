@@ -13,4 +13,5 @@ const store = configureStore({
 
 setupListeners(store.dispatch);
 
+export { useLazyGetSummaryQuery } from './apis/articleApi';
 export { store };
