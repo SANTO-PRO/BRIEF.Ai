@@ -99,7 +99,7 @@ const Summarizer = () => {
 					<img src={loader} alt="loader" className="w-20 h-20 object-contain" />
 				) : error ? (
 					<p>
-						Apologies, Something went wrong!. Please try again.
+						Apologies, Something went wrong! Please try again.
 						<br />
 						<span className="font-satoshi font-normal text-gray-700">
 							{error?.data?.error}
