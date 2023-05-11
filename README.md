@@ -2,7 +2,7 @@
 With BRIEF.Ai, You can get any article's summary. GPT-4 - Article Summarizer 
 
 ## Site Link:
-- [LiveSite](https://jersey3d.netlify.app)
+- [LiveSite](https://briefai.netlify.app)
 
 ### *Features*:
 
