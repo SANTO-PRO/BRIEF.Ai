@@ -1,7 +1,7 @@
+import { useEffect, useState } from 'react';
 import { RxLink1 } from 'react-icons/rx';
 import { TbCopy, TbCornerDownLeft } from 'react-icons/tb';
-// import { loader } from '../assets';
-import { useEffect, useState } from 'react';
+import { loader } from '../assets';
 import { useLazyGetSummaryQuery } from '../store';
 
 const Summarizer = () => {
@@ -66,7 +66,7 @@ const Summarizer = () => {
 				</form>
 
 				{/* URL History  */}
-				<div className="flex flex-col gap-1 max-h-60 overflow-t-auto">
+				<div className="flex flex-col gap-1 max-h-60 overflow-y-auto ">
 					{allArticles.map((item, index) => (
 						<div
 							key={`link-${index}`}
@@ -85,8 +85,34 @@ const Summarizer = () => {
 			</div>
 
 			{/* Summary  */}
+			<div className="my-10 max-w-full flex justify-center items-center">
+				{isFetching ? (
+					<img src={loader} alt="loader" className="w-20 h-20 object-contain" />
+				) : error ? (
+					<p>
+						Apologies, we encountered a hiccup while fetching the requested
+						data.
+						<br />
+						<span className="font-satoshi font-normal text-gray-700">
+							{error?.data?.error}
+						</span>
+					</p>
+				) : (
+					article.summary && (
+						<div className="flex flex-col gap-3">
+							<h2 className="font-satoshi font-bold text-gray-700 text-xl">
+								Article <span className="blue_gradient">Summary</span>
+							</h2>
 
-			<div className=""></div>
+							<div className="summary_box">
+								<p className="font-inter font-medium text-sm text-grat-700">
+									{article.summary}
+								</p>
+							</div>
+						</div>
+					)
+				)}
+			</div>
 		</section>
 	);
 };
