@@ -1,5 +1,5 @@
 # BRIEF.Ai
-With BRIEF.Ai, You can get any article's summary. GPT-4 - Article Summarizer 
+Say goodbye to lengthy articles and hello to simplified reading with Brief.Ai - the open-source article summarizer. Transform complex information into clear and concise summaries and enjoy an enhanced reading experience.
 
 ## Site Link:
 - [LiveSite](https://briefai.netlify.app)
@@ -22,6 +22,7 @@ With BRIEF.Ai, You can get any article's summary. GPT-4 - Article Summarizer
 ![vite](https://user-images.githubusercontent.com/72430572/229428291-e2026193-5559-4bb9-a603-66fcd9bd698b.png)
 ![redux](https://user-images.githubusercontent.com/72430572/235615344-1d56a1e0-0347-4783-9b3b-45f6b416b78e.png)
 ![tailwindcss](https://user-images.githubusercontent.com/72430572/235615751-fd222b66-0b03-4f6c-913e-4b0e0ebb87bf.png)
+![gpt-4](https://github.com/DeveloperSantoGithub/BRIEF.Ai/assets/72430572/0b186943-09e2-469e-80a5-3b94a593e83f)
 
 </br>
 
@@ -33,6 +34,7 @@ With BRIEF.Ai, You can get any article's summary. GPT-4 - Article Summarizer
 * [Tailwind CSS](https://tailwindcss.com/)
 * [RapidApi](https://rapidapi.com/)
 * [OpenAI's GPT-4](https://openai.com/research/gpt-4)
+* And More
 
 
 ## *WEBSITE DEMO*
