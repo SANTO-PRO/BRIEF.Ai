@@ -6,46 +6,40 @@ With BRIEF.Ai, You can get any article's summary. GPT-4 - Article Summarizer
 
 ### *Features*:
 
-* 3D Model view
-* Moveable 3D Model
-* Smooth User Experience
-* Cool Animations
 
-Customization Tools:
-* Color Picker
-* Custom Logo and Screen Add
-* Logo and Screen ON/OFF 
-* Dalle.E AI (Implementing...)
-* Download Complete Design
+* Mordern User Interface
+* Using [OpenAI's GPT-4 Model](https://openai.com/research/gpt-4)
+* copy link to clipboard
+* copy Summary to clipboard
+* Save user search history 
+* Responsive to any Devices
+* Just Past your link and get the Summarized version of your article
+
 
 ### *Tools*:
 ![JS](https://user-images.githubusercontent.com/72430572/229429377-df0ad5ec-d747-402a-8258-2be5360fae86.png)
 ![react](https://user-images.githubusercontent.com/72430572/229426819-a1d5fd4a-02a6-43df-b66c-7e4a66e68f09.png)
 ![vite](https://user-images.githubusercontent.com/72430572/229428291-e2026193-5559-4bb9-a603-66fcd9bd698b.png)
-![three](https://user-images.githubusercontent.com/72430572/229430208-49e9c2df-ffb7-4cc7-a3d9-e2dd71d9d62b.png)
-![fm](https://user-images.githubusercontent.com/72430572/229430699-ada16aa2-09a5-46ef-b653-708b61d24a7e.png)
+![redux](https://user-images.githubusercontent.com/72430572/235615344-1d56a1e0-0347-4783-9b3b-45f6b416b78e.png)
+![tailwindcss](https://user-images.githubusercontent.com/72430572/235615751-fd222b66-0b03-4f6c-913e-4b0e0ebb87bf.png)
 
 </br>
 
 
 * JavaScript: ES6 
-* React.JS 
-* Three.JS 
-* Vite.JS
-* Framer Motion
-* Tailwind CSS
-* Maath
-* valtio
-* Drei
-* Working With APIs
+* [React.JS](https://react.dev/) 
+* [Redux.JS](https://redux.js.org/)
+* [Vite.JS](https://vitejs.dev/)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [RapidApi](https://rapidapi.com/)
+* [OpenAI's GPT-4](https://openai.com/research/gpt-4)
 
 
 ## *WEBSITE DEMO*
 
 ## Home Page:
-![home](https://user-images.githubusercontent.com/72430572/229424129-ac28ed4a-5ac4-4d39-a87c-fc25b60610ca.png)
-## Customizer Page:
-![customizer](https://user-images.githubusercontent.com/72430572/229424532-d5fb964c-9fc3-4829-95e1-53e30b3631d0.png)
+![brief ai](https://github.com/DeveloperSantoGithub/BRIEF.Ai/assets/72430572/613fef5d-b5a9-4c6f-8d7f-6af119ab389a)
+
 
 # *Author*
 
