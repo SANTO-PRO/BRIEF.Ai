@@ -1,4 +1,5 @@
-import { TbCornerDownLeft, TbLink } from 'react-icons/tb';
+import { RxLink1 } from 'react-icons/rx';
+import { TbCornerDownLeft } from 'react-icons/tb';
 // import { loader } from '../assets';
 
 const Summarizer = () => {
@@ -9,10 +10,22 @@ const Summarizer = () => {
 					className="relative justify-center items-center"
 					onSubmit={() => {}}
 				>
-					<TbLink />
-					<input />
+					<RxLink1 className="absolute letf-0 mt-3.5 ml-3" />
 
-					<button>
+					<input
+						type="url"
+						placeholder="Enter Your URL"
+						value=""
+						onChange={() => {}}
+						required
+						className="url_input peer"
+					/>
+
+					<button
+						type="submit"
+						className="submit_btn  peer-focus:border-gray-700 peer-focus:text-gray-700
+					"
+					>
 						<TbCornerDownLeft />
 					</button>
 				</form>
