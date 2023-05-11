@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import { RxLink1 } from 'react-icons/rx';
-import { TbCopy, TbCornerDownLeft } from 'react-icons/tb';
+import { TbCheck, TbChecks, TbCopy, TbCornerDownLeft } from 'react-icons/tb';
 import { loader } from '../assets';
 import { useLazyGetSummaryQuery } from '../store';
 
 const Summarizer = () => {
+	const [copied, setCopied] = useState('');
 	const [allArticles, setAllArticles] = useState([]);
 	const [article, setArticle] = useState({
 		url: '',
@@ -35,6 +36,12 @@ const Summarizer = () => {
 
 			localStorage.setItem('articles', JSON.stringify(updatedAllArticles));
 		}
+	};
+
+	const handleCopy = (copiedData) => {
+		setCopied(copiedData);
+		navigator.clipboard.writeText(copiedData);
+		setTimeout(() => setCopied(false), 3000);
 	};
 
 	return (
@@ -73,8 +80,10 @@ const Summarizer = () => {
 							onClick={() => setArticle(item)}
 							className="link_card"
 						>
-							<div className="copy_btn">
-								<TbCopy className="w-[50%] h-[50%] object-contain" />
+							<div className="copy_btn" onClick={() => handleCopy(item.url)}>
+								<div className="w-[50%] h-[50%] object-contain">
+									{copied === item.url ? <TbCheck /> : <TbCopy />}
+								</div>
 							</div>
 							<p className="flex-1 font-satoshi text-blue-700 font-medium text-sm truncate">
 								{item.url}
@@ -85,7 +94,7 @@ const Summarizer = () => {
 			</div>
 
 			{/* Summary  */}
-			<div className="my-10 max-w-full flex justify-center items-center">
+			<div className="my-10 max-w-full flex justify-center items-center cursor-pointer">
 				{isFetching ? (
 					<img src={loader} alt="loader" className="w-20 h-20 object-contain" />
 				) : error ? (
@@ -100,9 +109,27 @@ const Summarizer = () => {
 				) : (
 					article.summary && (
 						<div className="flex flex-col gap-3">
-							<h2 className="font-satoshi font-bold text-gray-700 text-xl">
-								Article <span className="blue_gradient">Summary</span>
-							</h2>
+							<div className="flex justify-between items-center">
+								<h2 className="font-satoshi font-bold text-gray-700 text-xl">
+									Article <span className="blue_gradient">Summary</span>
+								</h2>
+								<button
+									className="bg-black text-white px-2 py-0.5 rounded-full border border-black hover:bg-white hover:text-black"
+									onClick={() => handleCopy(article.summary)}
+								>
+									{copied === article.summary ? (
+										<div className="flex items-center gap-1">
+											<TbChecks />
+											Copied
+										</div>
+									) : (
+										<div className="flex items-center gap-1">
+											<TbCopy />
+											Copy
+										</div>
+									)}
+								</button>
+							</div>
 
 							<div className="summary_box">
 								<p className="font-inter font-medium text-sm text-grat-700">
@@ -118,6 +145,3 @@ const Summarizer = () => {
 };
 
 export default Summarizer;
-
-//
-// TbCheck
