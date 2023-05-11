@@ -12,9 +12,12 @@ const Summarizer = () => {
 
 	const [getSummary, { isFetching, error }] = useLazyGetSummaryQuery();
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		alert('submited');
+
+		const { data } = await getSummary({ articleUrl: article.url });
+
+		console.log(data.summary);
 	};
 
 	return (

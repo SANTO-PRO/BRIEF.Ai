@@ -22,16 +22,8 @@ const articleApi = createApi({
 	endpoints: (builder) => {
 		return {
 			getSummary: builder.query({
-				query: (articleUrl) => {
-					return {
-						url: '/summarize',
-						params: {
-							url: encodeURIComponent(articleUrl),
-							length: '3',
-						},
-						method: 'GET',
-					};
-				},
+				query: (params) =>
+					`/summarize?url=${encodeURIComponent(params.articleUrl)}&length=3`,
 			}),
 		};
 	},
