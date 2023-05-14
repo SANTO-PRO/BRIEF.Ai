@@ -144,5 +144,3 @@ const Summarizer = () => {
 };
 
 export default Summarizer;
-
-//sadsa
