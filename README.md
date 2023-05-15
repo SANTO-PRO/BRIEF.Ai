@@ -37,10 +37,9 @@ Say goodbye to lengthy articles and hello to simplified reading with Brief.Ai - 
 * And More
 
 
-## *WEBSITE DEMO*
+## WEBSITE PREVIEW:
+![Asset 1poster](https://github.com/DeveloperSantoGithub/BRIEF.Ai/assets/72430572/f8e8bf2d-f160-466c-b5ca-db89bce8e6ee)
 
-## Home Page:
-![brief ai](https://github.com/DeveloperSantoGithub/BRIEF.Ai/assets/72430572/613fef5d-b5a9-4c6f-8d7f-6af119ab389a)
 
 
 # *Author*
