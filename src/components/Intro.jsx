@@ -9,7 +9,7 @@ const Intro = () => {
 
 				<div
 					className="black_btn cursor-pointer"
-					onClick={() => window.open('https://github.com/DeveloperSantoGithub')}
+					onClick={() => window.open('https://github.com/SANTO-PRO')}
 				>
 					<GoMarkGithub />
 				</div>
